@@ -38,6 +38,16 @@ export class RecipeService {
 
        }
 
+       getRecipe(id: number) {
+        // This will return the reference
+        //    return this.recipes
+        console.log('id recieveed', id)
+        return this.recipes[id]
+
+    }
+
+
+
 
        addIngredientsToShoppingListComponent(ingredients: Ingredient[]){
         this.slService.addIngredients(ingredients)
